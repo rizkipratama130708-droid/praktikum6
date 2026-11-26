@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratikum6 UI/UX Rizki pratama</title>
+</head>
+<body>
+    
+  <h1>pratikum6 UI/UX Rizki pratama</h1>
+  <script> 
+       // code js
+       const nama = "bagol";
+       let  umur = 15;   
+       let nilai = 100;
+       let aktif = true;  
+
+    console.log("nama", nama);
+    console.log("umur", umur);
+    console.log("nilai", nilai);
+    console.log("aktif", aktif);
+    console.log("tipe nilai", typeof nilai);
+
+    const tugas = 80;
+    const uts = 90;
+    const uas = 100;
+    const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+    console.log("nilai akhir", akhir);
+    console.log("lulus:", akhir >= 60);
+
+    // percabangan if else
+    const nilai2 = 78;
+    let kategori;
+
+    if (nilai2 >= 85) {
+        kategori = "A";
+    } else if (nilai2 >= 70) {
+        kategori = "B";
+    } else if (nilai2 >= 60) {
+        kategori = "C";
+    } else {
+        kategori = "D";
+    }
+
+    console.log("nilai:", nilai2);
+    console.log("kategori:", kategori);
+
+    // perulangan dan fungsi dasar
+    function hitungDiskon(harga, persen) {
+        return harga - (harga * persen / 100);
+    }
+
+    for (let i = 1; i <= 5; i++) {
+        const harga = 100000;
+        const bayar = hitungDiskon(harga, 10);
+        console.log("barang ke-", i, "harga:", harga, "bayar:", bayar);
+
+
+    }
+  </script>
+    
+</body>
+</html>
